@@ -201,8 +201,8 @@ Our system uses a multi-layered approach:
 
 ## 📸 Platform Preview
 
-|                                      Smart Job Matching                                       |                                      Dashboard Analytics                                      |
-| :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+                                   ## Smart Job Matching                                                                           Dashboard Analytics                                     
+
 |  |<img width="1919" height="994" alt="Screenshot 2026-02-26 223730" src="https://github.com/user-attachments/assets/b9bad880-0c21-4aef-aea6-01f3ac6f6bd4" /> 
 |<img width="1919" height="994" alt="Screenshot 2026-02-22 230528" src="https://github.com/user-attachments/assets/2f91088f-bc5b-4c52-a44d-05b1b92d07fa" />
 
