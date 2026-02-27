@@ -13,7 +13,7 @@
 
 ## 🌟 Unique Value Proposition
 
-Traditional job portals only search. **CareerFlow AI** _analyzes, trains, and matches_. It doesn't just show you jobs; it detects your skill gaps, suggests roadmaps, protects you from scams, and uses AI to refine your professional brand.
+Traditional job portals only search. **CareerFlow AI** _analyzes, trains, and matches_. It doesn't just show you jobs; it detects your skill gaps, suggests roadmaps, protects you from scams, and uses blazing-fast AI to refine your professional brand—all wrapped in a premium, modern SaaS-style user interface with dynamic background gradients.
 
 ---
 
@@ -27,7 +27,7 @@ Traditional job portals only search. **CareerFlow AI** _analyzes, trains, and ma
 
 ### 🛡️ Security & Integrity
 
-- **Fake Job Detection**: A sophisticated ML module that analyzes company metadata, URL patterns, and job descriptions to flag potential scams and phishing attempts.
+- **Fake Job Detection**: A sophisticated ML module that analyzes company metadata, URL patterns, and job descriptions to flag potential scams and phishing attempts. Includes graceful ML fallback and strict unreachable-URL checks.
 
 ### 📈 Career Development
 
@@ -134,31 +134,57 @@ This project utilizes a comprehensive suite of modern tools and libraries to pro
 - n8n (Local or Cloud)
 - Python 3.9+ (For ML modules)
 
-### 2. Installation
+### 2. Installation & Setup
+
+#### Frontend Setup
 
 ```bash
 # Clone the repository
 git clone https://github.com/Ashwin-tech-N/AI-Career-Navigation-.git
 cd AI-Career-Navigation-
 
-# Install dependencies
+# Install frontend dependencies
 npm install
 ```
 
-### 3. Environment Setup
+#### Backend Setup
 
-Create a `.env` file in the root:
+The FastAPI backend powers the Fake Job Detection ML models and API routes.
+
+```bash
+# Navigate to the backend directory
+cd backend
+
+# Install Python dependencies
+pip install -r requirements.txt
+```
+
+### 3. Environment Configuration
+
+Create a `.env` file in the project root:
 
 ```env
-VITE_GROQ_API_KEY=your_key_here
+VITE_GROQ_API_KEY=your_groq_api_key_here
 VITE_N8N_WEBHOOK_URL=http://localhost:5678/webhook/job-match
 ```
 
-### 4. Running the Project
+### 4. Running the Application
+
+You need to run both the frontend and backend servers.
+
+**Terminal 1 (Backend - FastAPI):**
 
 ```bash
-# Start the development server
+cd backend
+python app.py
+# The backend will start on http://localhost:8000
+```
+
+**Terminal 2 (Frontend - React/Vite):**
+
+```bash
 npm run dev
+# The frontend will start on http://localhost:5173
 ```
 
 ---
